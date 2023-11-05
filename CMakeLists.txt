@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.8...3.26)
+set(BUILD_SHARED_LIBS TRUE)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # Fallback for using newer policies on CMake <3.12.
 if(${CMAKE_VERSION} VERSION_LESS 3.12)
